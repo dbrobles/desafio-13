@@ -1,0 +1,486 @@
+.destacados h3, .publicidad h3, .noticias h3 {
+  color: #575757;
+  font-size: 24px;
+  line-height: 150%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center; }
+
+.destacados p, .publicidad p, .noticias p {
+  color: #575757;
+  font-size: 14px;
+  line-height: 140%; }
+
+.destacados a, .publicidad a, .noticias a {
+  text-transform: uppercase;
+  color: #ffffff;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 16px;
+  font-size: 14px; }
+
+.destacados h2 {
+  color: #575757;
+  font-size: 60px;
+  line-height: 150%; }
+
+.destacados p, .publicidad p, .noticias p {
+  color: #575757;
+  font-size: 14px;
+  line-height: 220%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.contenedor {
+  width: 80%;
+  margin: auto; }
+
+header {
+  height: 100vh;
+  background-image: url("../imagenes/banner.jpg");
+  background-size: cover;
+  /*para que me muestre la mayor cantidad de imagen*/
+  background-position: center;
+  position: relative; }
+
+header::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  /* como quedo de bloque ahora el texto no esta entonces le coloco un position absolut*/
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+header nav {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  color: #ffffff;
+  z-index: 1; }
+
+header article {
+  width: 40%;
+  margin: auto;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  /*para utilizar el z index siempre tengo que tener un position*/ }
+
+header article h1 {
+  font-size: 40px;
+  width: 45%;
+  margin: auto;
+  /* margin auto es para centrar cuando agrego un width*/
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 2px; }
+
+header article h1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #ffffff;
+  margin: 30px auto; }
+
+header article p {
+  line-height: 140%;
+  font-size: 14px; }
+
+header article a {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  border: 2px solid #ffffff;
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 10px; }
+
+.destacados {
+  padding: 40px 0; }
+  .destacados.uno {
+    background-color: #51cca8;
+    background-image: url("../imagenes/section1.jpg");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: right center; }
+    .destacados.uno a {
+      background: #51cca8; }
+  .destacados.dos {
+    background-color: #51b9cc;
+    background-image: url("../imagenes/section2.jpg");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: left center; }
+    .destacados.dos a {
+      background: #51b9cc; }
+  .destacados.tres {
+    background-color: #5d92cc;
+    background-image: url("../imagenes/section3.jpg");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: right center; }
+    .destacados.tres a {
+      background: #5d92cc; }
+  .destacados .contenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .destacados h2 {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: 2px;
+    width: 30%; }
+  .destacados article {
+    width: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 4px; }
+
+.publicidad {
+  padding: 80px;
+  background-color: #6e81d0;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center; }
+  .publicidad .contenedor {
+    background: #ffffff;
+    position: relative;
+    border-radius: 4px;
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-line-pack: center;
+    align-content: center; }
+  .publicidad .contenedor::before {
+    content: "";
+    display: block;
+    background-size: cover;
+    height: 50%;
+    background-image: url("../imagenes/slider.jpg");
+    background-repeat: no-repeat;
+    background-position: center; }
+  .publicidad h2 {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-bottom: 40px; }
+  .publicidad h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #ffffff;
+    margin: 20px auto; }
+  .publicidad article {
+    width: 80%;
+    color: #575757;
+    text-align: center;
+    margin: 40px auto; }
+  .publicidad a {
+    background: #6e81d0; }
+
+.noticias {
+  padding-top: 50px;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center; }
+  .noticias .contenedor ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /*flex-direction: row;
+    justify-content:space-around;   
+     porque no me lo toma????*/ }
+  .noticias .contenedor .uno {
+    background: #ffffff;
+    position: relative;
+    border-radius: 4px;
+    width: 50%;
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -moz-box-shadow: inset 0px 0px 3px 1px #e4e0e0;
+    -webkit-box-shadow: inset 0px 0px 3px 1px #e4e0e0;
+    box-shadow: inset 0px 0px 3px 1px #e4e0e0; }
+  .noticias .uno::before {
+    content: "";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-size: cover;
+    height: 50%;
+    background-image: url("../imagenes/nota1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    -moz-box-shadow: inset 0px 0px 3px 1px #e4e0e0;
+    -webkit-box-shadow: inset 0px 0px 3px 1px #e4e0e0;
+    box-shadow: inset 0px 0px 3px 1px #e4e0e0; }
+  .noticias a {
+    width: 32%;
+    background: #51cca8;
+    -ms-flex-line-pack: center;
+    align-content: center; }
+  .noticias .contenedor .dos {
+    margin-left: 30px;
+    background: #ffffff;
+    position: relative;
+    border-radius: 4px;
+    width: 50%;
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -moz-box-shadow: inset 0px 0px 3px 1px #e4e0e0;
+    -webkit-box-shadow: inset 0px 0px 3px 1px #e4e0e0;
+    box-shadow: inset 0px 0px 3px 1px #e4e0e0; }
+  .noticias .dos::before {
+    content: "";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-size: cover;
+    height: 50%;
+    background-image: url("../imagenes/nota2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    -moz-box-shadow: inset 0px 0px 3px 1px #e4e0e0;
+    -webkit-box-shadow: inset 0px 0px 3px 1px #e4e0e0;
+    box-shadow: inset 0px 0px 3px 1px #e4e0e0; }
+  .noticias .contenedor ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    /*porque no me lo toma????*/ }
+  .noticias .contenedor .tres {
+    background: #ffffff;
+    position: relative;
+    border-radius: 4px;
+    width: 50%;
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -moz-box-shadow: inset 0px 0px 3px 1px #e4e0e0;
+    -webkit-box-shadow: inset 0px 0px 3px 1px #e4e0e0;
+    box-shadow: inset 0px 0px 3px 1px #e4e0e0; }
+  .noticias .tres::before {
+    content: "";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-size: cover;
+    height: 50%;
+    background-image: url("../imagenes/nota3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    -moz-box-shadow: inset 0px 0px 3px 1px #e4e0e0;
+    -webkit-box-shadow: inset 0px 0px 3px 1px #e4e0e0;
+    box-shadow: inset 0px 0px 3px 1px #e4e0e0; }
+  .noticias .contenedor .cuatro {
+    margin-left: 30px;
+    background: #ffffff;
+    position: relative;
+    border-radius: 4px;
+    width: 50%;
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -moz-box-shadow: inset 0px 0px 3px 1px #e4e0e0;
+    -webkit-box-shadow: inset 0px 0px 3px 1px #e4e0e0;
+    box-shadow: inset 0px 0px 3px 1px #e4e0e0; }
+  .noticias .cuatro::before {
+    content: "";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-size: cover;
+    height: 50%;
+    background-image: url("../imagenes/nota4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    -moz-box-shadow: inset 0px 0px 3px 1px #e4e0e0;
+    -webkit-box-shadow: inset 0px 0px 3px 1px #e4e0e0;
+    box-shadow: inset 0px 0px 3px 1px #e4e0e0; }
+  .noticias p {
+    padding: 20px;
+    text-align: center; }
+  .noticias h2 {
+    color: #575757;
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 20px; }
+  .noticias h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #575757;
+    margin: 20px auto; }
+  .noticias a {
+    display: block;
+    margin: auto;
+    text-align: center; }
+
+.subscripcion {
+  margin-top: 80px;
+  background: #51cca8; }
+  .subscripcion .contenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    height: 70vh; }
+  .subscripcion h2 {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 80px; }
+  .subscripcion h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #ffffff;
+    margin: 30px auto; }
+  .subscripcion form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /* border:none;
+        border-radius: $BrRedondo;
+        porque no me lo toma??*/ }
+  .subscripcion .email {
+    margin: 60px 0;
+    padding: 8px;
+    border: none;
+    border-radius: 4px; }
+  .subscripcion p {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 240%; }
+  .subscripcion .boton {
+    background-color: #5d92cc;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px; }
+
+.caja {
+  background-color: #e6e6e6;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .caja a {
+    color: gray;
+    margin: 10px; }
+  .caja .ubicacion {
+    padding-right: 5px; }
+  .caja .telefono {
+    padding-right: 5px; }
+  .caja .email {
+    padding-right: 5px; }
+  .caja p {
+    width: 100%;
+    text-align: center;
+    background-color: #e6e6e6; }
+  .caja .contenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .caja .copyright {
+    position: absolute;
+    margin-top: 50px; }

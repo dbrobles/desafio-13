@@ -1,0 +1,35 @@
+%TitulosH3 {
+    color: $negro;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+%PArticulos {
+    color: $negro;
+    font-size: $FsParrafos;
+    line-height: 140%;
+}
+
+%BtnArticulos {
+    text-transform: uppercase;
+    color: $blanco;
+    display:inline-block;
+    margin-top: 20px;
+    padding: 8px 16px;
+    font-size: $FsParrafos;
+}
+
+%TituloH2 {
+    color: $negro;
+    font-size: 60px;
+    line-height: 150%;
+}
+
+%PArticulos {
+    color: $negro;
+    font-size: $FsParrafos;
+    line-height: 220%;
+}

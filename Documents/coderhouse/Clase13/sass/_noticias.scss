@@ -1,0 +1,191 @@
+.noticias {
+    padding-top: 50px;
+    background-color: $blanco;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+
+    .contenedor ul {
+     display: flex;
+    /*flex-direction: row;
+    justify-content:space-around;   
+     porque no me lo toma????*/
+    }
+
+    .contenedor .uno {
+        background: $blanco;
+        position: relative;
+        border-radius: $BrRedondo;
+        width: 50%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        -moz-box-shadow:inset 0px 0px 3px 1px rgb(228, 224, 224);
+        -webkit-box-shadow:inset 0px 0px 3px 1px rgb(228, 224, 224);
+        box-shadow:inset 0px 0px 3px 1px rgb(228, 224, 224);
+        
+    }
+    
+
+    .uno::before {
+        content: "";
+        display:flex;
+        background-size:cover;
+        height: 50%;
+        background-image: url("../imagenes/nota1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        -moz-box-shadow:inset 0px 0px 3px 1px rgb(228, 224, 224);
+        -webkit-box-shadow:inset 0px 0px 3px 1px rgb(228, 224, 224);
+        box-shadow:inset 0px 0px 3px 1px rgb(228, 224, 224);
+    }
+
+    a{   
+        width:32%;
+        background: $verde;  
+        align-content: center;
+    
+        }
+
+    .contenedor .dos {
+        margin-left:30px;
+        background: $blanco;
+        position: relative;
+        border-radius: $BrRedondo;
+        width: 50%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        -moz-box-shadow:inset 0px 0px 3px 1px rgb(228, 224, 224);
+        -webkit-box-shadow:inset 0px 0px 3px 1px rgb(228, 224, 224);;
+        box-shadow:inset 0px 0px 3px 1px rgb(228, 224, 224);
+        
+
+        }
+
+    .dos::before {
+        content: "";
+        display:flex;
+        background-size: cover;
+        height: 50%;
+        background-image: url("../imagenes/nota2.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        -moz-box-shadow:inset 0px 0px 3px 1px rgb(228, 224, 224);
+        -webkit-box-shadow:inset 0px 0px 3px 1px rgb(228, 224, 224);
+        box-shadow:inset 0px 0px 3px 1px rgb(228, 224, 224);
+    }
+
+    .contenedor ul {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;   
+         /*porque no me lo toma????*/
+        }
+    
+
+    .contenedor .tres {
+        
+        background: $blanco;
+        position: relative;
+        border-radius: $BrRedondo;
+        width: 50%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        -moz-box-shadow:inset 0px 0px 3px 1px rgb(228, 224, 224);
+        -webkit-box-shadow:inset 0px 0px 3px 1px rgb(228, 224, 224);;
+         box-shadow:inset 0px 0px 3px 1px rgb(228, 224, 224);
+    
+    
+    }
+
+    .tres::before {
+        content: "";
+        display:flex;
+        background-size: cover;
+        height: 50%;
+        background-image: url("../imagenes/nota3.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        -moz-box-shadow:inset 0px 0px 3px 1px rgb(228, 224, 224);
+        -webkit-box-shadow:inset 0px 0px 3px 1px rgb(228, 224, 224);
+        box-shadow:inset 0px 0px 3px 1px rgb(228, 224, 224);
+}
+
+    .contenedor .cuatro {
+        margin-left:30px;
+        background: $blanco;
+        position: relative;
+        border-radius: $BrRedondo;
+        width: 50%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        -moz-box-shadow:inset 0px 0px 3px 1px rgb(228, 224, 224);
+        -webkit-box-shadow:inset 0px 0px 3px 1px rgb(228, 224, 224);;
+         box-shadow:inset 0px 0px 3px 1px rgb(228, 224, 224);
+    
+    
+    }
+
+    .cuatro::before {
+        content: "";
+        display:flex;
+        background-size: cover;
+        height: 50%;
+        background-image: url("../imagenes/nota4.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        -moz-box-shadow:inset 0px 0px 3px 1px rgb(228, 224, 224);
+        -webkit-box-shadow:inset 0px 0px 3px 1px rgb(228, 224, 224);
+        box-shadow:inset 0px 0px 3px 1px rgb(228, 224, 224);
+}
+
+p {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: $negro;
+    font-weight: 300;
+    font-size: $FsTitulo;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 20px;
+    }
+
+h2::after {
+    content: "";
+    display:block;
+    width:60px;
+    height: 3px;
+    background: $negro;
+    margin:20px auto;
+}
+
+
+
+    h3 {
+        @extend %TitulosH3;
+    }
+    p {
+        @extend %PArticulos;
+    }
+    
+    a {
+        @extend %BtnArticulos;
+        display:block;
+        margin:auto;
+        text-align: center;
+    }
+
+    
+  
+
+}

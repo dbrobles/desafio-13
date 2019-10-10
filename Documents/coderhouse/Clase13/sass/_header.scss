@@ -1,0 +1,76 @@
+header {
+    height: 100vh;
+    background-image: url("../imagenes/banner.jpg");
+    background-size: cover;
+    /*para que me muestre la mayor cantidad de imagen*/
+    background-position: center;
+    position: relative;
+
+}
+header::before {
+    content:"";
+    display:block;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    /* como quedo de bloque ahora el texto no esta entonces le coloco un position absolut*/
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+header nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    color:$blanco;
+    z-index: 1;
+}
+
+
+header article {
+    width:40%;
+    margin:auto;
+    color:$blanco;
+    text-align: center;
+    position: relative;
+    z-index:1;
+    /*para utilizar el z index siempre tengo que tener un position*/
+}
+
+header article h1 {
+    font-size: $FsTitulo;
+    width: 45%;
+    margin:auto;
+    /* margin auto es para centrar cuando agrego un width*/
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+header article h1::after{
+    content:"";
+    display:block;
+    width:100px;
+    height: 3px;
+    background: $blanco;
+    margin:30px auto;
+}
+
+header article p {
+    line-height: 140%;
+    font-size: $FsParrafos;
+}
+
+header article a {
+    color: $blanco;
+    text-transform: uppercase;
+    font-size: $FsParrafos;
+    border: 2px solid $blanco;
+    padding: 10px 20px;
+    display: inline-block;
+    margin:10px;
+
+
+}

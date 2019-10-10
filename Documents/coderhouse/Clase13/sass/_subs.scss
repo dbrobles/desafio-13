@@ -1,0 +1,110 @@
+.subscripcion {
+    margin-top: 80px;
+    background: $verde;
+    
+
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 60%;
+        height: 70vh;
+    }
+    h2 {
+        color: $blanco;
+        font-weight: 300;
+        font-size: $FsTitulo;
+        letter-spacing: 2px;
+        text-align: center;
+        padding-top: 80px;
+        }
+
+    h2::after {
+        content: "";
+        display:block;
+        width:60px;
+        height: 3px;
+        background: $blanco;
+        margin:30px auto;
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+       /* border:none;
+        border-radius: $BrRedondo;
+        porque no me lo toma??*/
+    }
+
+    .email {
+        margin: 60px 0;
+        padding: 8px;
+        border:none;
+        border-radius: $BrRedondo;
+        
+    }
+   
+    p {
+        color: $blanco;
+        font-size: $FsParrafos;
+        line-height: 240%;
+    }
+
+    .boton {
+        background-color: $azul;
+        border:none;
+        border-radius: $BrRedondo;
+        text-transform: uppercase;
+        color: $blanco;
+        display:inline-block;
+        padding: 8px 16px;
+        font-size: $FsParrafos;
+}
+    }
+
+.caja {
+    background-color:rgb(230, 230, 230);
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  
+
+    a {
+        color: gray;
+        margin:10px;
+    }
+
+
+    .ubicacion {
+        padding-right: 5px;
+
+    }
+    .telefono {
+        padding-right: 5px;
+       
+    }
+    .email {
+        padding-right: 5px;
+        
+    }
+    
+    p {
+       width: 100%;
+       text-align: center;
+       background-color:rgb(230, 230, 230); 
+    }
+
+    .contenedor {
+        display:flex;
+        justify-content: space-around;
+    }
+
+    .copyright {
+        position: absolute;
+        margin-top: 50px;
+
+    }
+}
