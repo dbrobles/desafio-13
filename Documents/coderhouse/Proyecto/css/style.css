@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    /*font-family: 'Bitter', serif;*/
+    font-family: 'Shadows Into Light', cursive;
+    color:white;
+
+}
+
+div section img {
+    width: 50% ; height:50%;
+}
+ 
+body header nav ul li {
+    display:inline-block;
+}
+
+header  {
+    background: black;
+    position: sticky;
+    height: 10vh;
+    top :0;
+	
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; 
+
+}
+.logo1 {
+    background-image:url(../imagenes/1920x1080.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    
+    
+}
+body{
+    background: black;
+}
+p{
+    display: inline;
+
+}
+
+body #header nav ul li a {
+    font-family: 'Mansalva', cursive;
+}
+
+.historia {
+    height: 100vh;
+    margin: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
